@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Calculator app</title>
+   </head>
+   <body>
+      <input type="number" id="val1" placeholder="Please enter value one" />
+      <input
+         type="text"
+         id="operand"
+         placeholder="Please enter Operand +,-,*,/"
+      />
+      <input type="number" id="val2" placeholder="Please enter value two" />
+      <br />
+      <br />
+      <select name="Category" id="category">
+         <option value="simple">Simple math Calculate</option>
+         <option value="circ">
+            Calculate Area of Circle with Circumference
+         </option>
+         <option value="radius">Calculate Area of Circle with Radius</option>
+         <option value="rect">Calculate Area of rectangle</option>
+      </select>
+      <br />
+      <br />
+      <button onclick="Calculator()">Calculate</button>
+      <h3>Answer:</h3>
+      <input type="text" name="answer" id="answer" value="0" readonly />
+      <script src="./calculate.js"></script>
+   </body>
+</html>
